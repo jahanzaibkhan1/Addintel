@@ -74,10 +74,10 @@ export class QuotationApi extends BaseApi {
 
         const res = await this.bookQuotation(id, {
             artworkIsReady: false,
-            bookedAt: today,
-            anticipatedExecutionAt: today,
-            anticipatedMailingAt: day1,
-            anticipatedLandingAt: day2
+            bookedAt: DateHelper.format(today),
+            anticipatedExecutionAt: DateHelper.format(today),
+            anticipatedMailingAt: DateHelper.format(day1),
+            anticipatedLandingAt: DateHelper.format(day2)
         });
 
         await assertStatus(res, [200, 204]);
@@ -90,8 +90,8 @@ export class QuotationApi extends BaseApi {
         const day2 = DateHelper.addDays(2);
 
         const res = await this.convertQuotation(id, {
-            anticipatedMailingAt: day1,
-            anticipatedLandingAt: day2,
+            anticipatedMailingAt: DateHelper.format(day1),
+            anticipatedLandingAt: DateHelper.format(day2),
             paperOrientation: 'landscape',
             artworkPdf: null,
             printerNote: ''

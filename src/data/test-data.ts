@@ -1,5 +1,6 @@
 import * as dotenv from 'dotenv';
 import rawData from './test-data.json';
+import { DateHelper } from '../utils/date.helper';
 dotenv.config();
 
 export const ENV = {
@@ -82,11 +83,13 @@ export const TEST_DATA = {
 
   quotation: {
     ...rawData.quotation,
+    expiryAt: DateHelper.format(DateHelper.addDays(90)),
     agency: `Agency Enter ${getNextId()} ${ts}`,
     name: `Consultative Quote ${getNextId()} ${ts}`,
   },
 
   quotationClientSupplied: {
     ...rawData.quotationClientSupplied,
+    expiryAt: DateHelper.format(DateHelper.addDays(90)),
   },
 };

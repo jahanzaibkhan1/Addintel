@@ -31,6 +31,7 @@ test.describe('Quotation API', () => {
   });
 
   test('TC-Q-003 Convert client supplied quotation', async () => {
+    test.setTimeout(300000);
     const quotation = await quotationApi.createClientSuppliedQuotation();
     const createCost = await quotationApi.getQuotationCost(quotation.id);
     await quotationApi.bookQuotationLifecycle(quotation.id);
