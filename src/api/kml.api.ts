@@ -16,7 +16,7 @@ export interface KmlPayload {
     data: KmlCoordinate[][];
 }
 
-export class kmlCreationApi extends BaseApi {
+export class KmlCreationApi extends BaseApi {
     constructor(request: APIRequestContext) {
         super(request);
     }

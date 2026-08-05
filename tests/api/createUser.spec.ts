@@ -19,9 +19,6 @@ test.describe('Create User API - Full Coverage Suite', () => {
     const userApi = new CreateUserApi(request);
     const response = await userApi.createUser(TEST_DATA.createUser);
     await assertStatus(response, 201);
-    await response.json();
-    console.log('========== CREATE USER PAYLOAD ==========');
-    console.log(TEST_DATA.createUser);
   });
   
 });

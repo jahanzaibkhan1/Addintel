@@ -5,7 +5,7 @@ import { AuthApi } from '../api/auth.api';
 import { ExclusionListApi } from '../api/exclusionList.api';
 import { MailablePoolApi } from '../api/mailablePool.api';
 import { CreateUserApi } from '../api/createUser.api';
-import { kmlCreationApi } from '../api/kml.api';
+import { KmlCreationApi } from '../api/kml.api';
 import { QuotationApi } from '../api/quotations.api';
 import { USERS } from '../data/test-data';
 import { assertLoginSuccess } from '../helpers/api-helper';
@@ -22,7 +22,7 @@ type Fixtures = {
   exclusionListApi: ExclusionListApi;
   mailablePoolApi: MailablePoolApi;
   createUserApi: CreateUserApi;
-  kmlApi: kmlCreationApi;
+  kmlApi: KmlCreationApi;
   quotationApi: QuotationApi;
   adminCreateUserApi: CreateUserApi;
   adminQuotationApi: QuotationApi;
@@ -83,7 +83,7 @@ export const test = base.extend<Fixtures>({
   },
 
   kmlApi: async ({ authenticatedRequest }, use) => {
-    await use(new kmlCreationApi(authenticatedRequest));
+    await use(new KmlCreationApi(authenticatedRequest));
   },
 
   quotationApi: async ({ authenticatedRequest }, use) => {
