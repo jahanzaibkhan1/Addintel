@@ -4,7 +4,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript)
 ![Playwright](https://img.shields.io/badge/Playwright-1.60%2B-green?logo=playwright)
 
-End-to-end API test automation suite for the [Addintel](https://client-staging.addintel.co.uk) platform, covering authentication, user management, quotations, and data operations — with CI/CD via GitHub Actions.
+End-to-end API test automation suite for the [Addintel](https://client-staging.addintel.co.uk) platform, covering authentication, user management, quotations, and data operations — with CI/CD via GitHub Actions
 
 ---
 
