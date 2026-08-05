@@ -1,0 +1,129 @@
+{
+  "newExclusionList": {
+    "branchId": 1,
+    "description": "This is a test exclusion list created by Playwright tests."
+  },
+
+  "mailablePool": {
+    "companyId": 3980,
+    "clone": {
+      "id": 4126
+    }
+  },
+
+  "createUser": {
+    "first_name": "Addintel",
+    "password": "Test@12345",
+    "password_confirmation": "Test@12345",
+    "company_id": 3980,
+    "branch_id": 1,
+    "department_id": null
+  },
+
+  "updateUserPayload": {
+    "first_name": "Addintel",
+    "company_id": 3980,
+    "branch_id": 7001,
+    "department_id": null,
+    "role_id": 3
+  },
+
+  "kmlCreation": {
+    "type": "custom",
+    "description": "Description enter",
+    "ownerType": "company",
+    "ownerId": 1,
+    "data": [
+      [
+        { "lat": 51.52426712245618, "lng": -0.11702865600585534 },
+        { "lat": 51.52500000000000, "lng": -0.11800000000000000 },
+        { "lat": 51.52350000000000, "lng": -0.11600000000000000 }
+      ]
+    ]
+  },
+
+  "quotation": {
+    "companyId": 1,
+    "ownerId": 3197,
+    "userId": 3197,
+    "poNumber": "123456",
+    "contactName": "Addintel",
+    "contactEmails": ["consultant@gmail.com"],
+    "configkey": "9ba717",
+    "note": "Note Enter here, this is for testing purpose",
+    "jobType": "consultative",
+    "likelihood": 2,
+    "mailerService": "admail",
+    "pageCount": 1,
+    "paperSizeId": 5,
+    "paperTypeId": 1,
+    "paperGsmId": 2,
+    "paperEnvelopeId": 2,
+    "paperEnvelopeType": "envelop",
+    "paperExtraId": 29,
+    "paperOrientation": "portrait",
+    "printerConnectionId": 20,
+    "printerConnection": null,
+    "withNames": 1,
+    "includeClientSeeds": true,
+    "includeDigitalStamp": true,
+    "seedAddresses": [1029, 1078],
+    "expiryAt": "2026-07-01",
+    "startDistributionDate": null,
+    "setupCost": "1",
+    "setupPrice": "1",
+    "printCost": "1",
+    "printPrice": "1",
+    "postageCost": "1",
+    "postagePrice": "1",
+    "digitalStampCost": "1",
+    "digitalStampPrice": "1",
+    "nameCost": "1",
+    "namePrice": "1"
+  },
+
+  "quotationClientSupplied": {
+    "companyId": 1,
+    "agency": "agency field",
+    "ownerId": 3197,
+    "userId": 3197,
+    "poNumber": "7654",
+    "configkey": "dd6082",
+    "contactName": "Addintel Consultant",
+    "contactEmails": [
+      "addintel@addintel.co.uk",
+      "admin@internal.com"
+    ],
+    "name": "STATIC_NAME",
+    "note": "Testing 1",
+    "jobType": "client_supplied",
+    "likelihood": 3,
+    "mailerService": "economy",
+    "pageCount": 1,
+    "paperSizeId": 5,
+    "paperTypeId": null,
+    "paperGsmId": null,
+    "paperEnvelopeId": 4,
+    "paperEnvelopeType": "Envelop",
+    "paperExtraId": 43,
+    "paperOrientation": "landscape",
+    "printerConnectionId": 20,
+    "printerConnection": null,
+    "withNames": 2,
+    "includeClientSeeds": true,
+    "includeDigitalStamp": true,
+    "seedAddresses": [1029, 1078],
+    "expiryAt": "2026-07-01",
+    "startDistributionDate": null,
+    "setupCost": "1",
+    "setupPrice": "1",
+    "printCost": "1",
+    "printPrice": "1",
+    "postageCost": "1",
+    "postagePrice": "1",
+    "digitalStampCost": "1",
+    "digitalStampPrice": "1",
+    "nameCost": "1",
+    "namePrice": "1"
+  }
+}
