@@ -68,10 +68,10 @@ Create a `.env` file in the project root:
 ```env
 BASE_URL=https://client-staging.addintel.co.uk
 API_BASE_URL=<your-api-base-url>
-CONSULTANT_EMAIL=<consultant-email>
-CONSULTANT_PASSWORD=<consultant-password>
-ADMIN_EMAIL=<admin-email>
-ADMIN_PASSWORD=<admin-password>
+consultant_EMAIL=<consultant-email>
+consultant_PASSWORD=<consultant-password>
+Admin_EMAIL=<admin-email>
+Admin_PASSWORD=<admin-password>
 ```
 
 ---
@@ -91,6 +91,20 @@ npm run test:debug
 # View HTML report
 npm run report
 ```
+
+---
+
+## Branching Strategy
+
+This project follows Git Flow:
+
+| Branch | Purpose |
+|--------|---------|
+| `main` | Production-ready code |
+| `develop` | Integration branch — merge features here first |
+| `release/1.0` | Stabilization before merging to `main` |
+| `feature/*` | New features branched off `develop` |
+| `hotfix/*` | Emergency fixes branched off `main` |
 
 ---
 
